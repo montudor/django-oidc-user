@@ -8,14 +8,14 @@ from setuptools import (
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-	name = 'django-cross-project-accounts',
+	name = 'django-oidc-user',
 	packages = find_packages(),
 	version = '0.0.1',
-	description = 'Use a custom User model between projects easily.',
+	description = 'Creates an OpenID Connect compliant User model.',
 	author = 'Monte Hellawell',
 	author_email = 'hellawell@monte.me.uk',
-	url = 'https://github.com/montudor/django-cross-project-accounts',
-	download_url = 'https://github.com/montudor/django-cross-project-accounts/archive/v0.0.1.tar.gz',
-	keywords = ['testing', 'logging', 'example'],
+	url = 'https://github.com/montudor/django-oidc-user',
+	download_url = 'https://github.com/montudor/django-oidc-user/archive/v0.0.1.tar.gz',
+	keywords = ['django'],
 	classifiers = [],
 )
