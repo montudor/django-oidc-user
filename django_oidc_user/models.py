@@ -9,6 +9,7 @@ import re
 import pytz
 
 from core.timezones import TIMEZONES
+from core.locales import LOCALES
 
 class User(AbstractBaseUser, PermissionsMixin):
 
@@ -56,3 +57,4 @@ class User(AbstractBaseUser, PermissionsMixin):
 		])
 
 	zoneinfo = models.CharField(_('time zone'), max_length = 254, choices = TIMEZONES, default = "Europe/London")
+	locale = models.CharField(_('locale'), max_length = 254, choices = LOCALES, default = "en-US")
