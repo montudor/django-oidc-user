@@ -21,7 +21,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-And if you want to set it as your default User model used by Django, add the following line to your settings:
+And you will need to set it as your default User model, so add the following line to your settings:
 
 ```python
 AUTH_USER_MODEL = 'django_oidc_user.User'

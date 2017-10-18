@@ -8,8 +8,8 @@ from django.contrib.auth.models import UserManager
 import re
 import pytz
 
-from core.timezones import TIMEZONES
-from core.locales import LOCALES
+from django_oidc_user.timezones import TIMEZONES
+from django_oidc_user.locales import LOCALES
 
 class User(AbstractBaseUser, PermissionsMixin):
 
