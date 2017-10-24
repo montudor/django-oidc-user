@@ -12,13 +12,22 @@ class CustomUserAdmin(UserAdmin):
 		(None, {
 			'fields': ('username', 'password')
 		}),
-		("Personal Information", {
-			'fields': ('first_name', 'last_name', 'email')
+		("Profile", {
+			'fields': ('first_name', 'last_name', 'website')
+		}),
+		("Email", {
+			'fields': ('email', 'email_verified')
+		}),
+		("Phone", {
+			'fields': ('phone', 'phone_verified')
 		}),
 		("Permissions", {
 			'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')
 		}),
+		("Location", {
+			'fields': ('zoneinfo', 'locale')
+		}),
 		("Important Dates", {
-			'fields': ('last_login', 'date_joined')
+			'fields': ('last_login', 'date_joined', 'updated_at')
 		}),
 	)
