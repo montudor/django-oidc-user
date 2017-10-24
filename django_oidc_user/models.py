@@ -43,6 +43,10 @@ class User(AbstractBaseUser, PermissionsMixin):
 	USERNAME_FIELD = 'username'
 	REQUIRED_FIELDS = ['first_name', 'email']
 	
+	@property
+	def name(self):
+		return self.get_full_name()
+
 	def get_full_name(self):
 		if self.last_name.lstrip(" ") == "":
 			return self.first_name
