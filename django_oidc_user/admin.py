@@ -22,7 +22,7 @@ class CustomUserAdmin(UserAdmin):
 			'fields': ('phone', 'phone_verified')
 		}),
 		("Permissions", {
-			'fields': ('is_active', 'is_staff', 'is_superuser', 'groups', 'user_permissions')
+			'fields': ('is_active', 'is_verified', 'is_staff', 'is_superuser', 'groups', 'user_permissions')
 		}),
 		("Location", {
 			'fields': ('zoneinfo', 'locale')
