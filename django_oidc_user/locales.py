@@ -1,4 +1,4 @@
-LOCALES = {
+LOCALES = [
 	("bg-BG", "Bulgarian"),
 	("cs-CZ", "Czech"),
 	("da-DK", "Danish"),
@@ -25,4 +25,4 @@ LOCALES = {
 	("sv-SE", "Swedish"),
 	("tr-TR", "Turkish"),
 	("zh-CN", "Chinese"),
-}
+]
