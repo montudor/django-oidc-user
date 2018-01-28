@@ -5,7 +5,7 @@ def userinfo(claims, user):
 	claims['preferred_username'] = user.username
 	claims['website'] = user.website
 	claims['zoneinfo'] = user.zoneinfo
-	cliams['locale'] = user.locale
+	claims['locale'] = user.locale
 
 	claims['email'] = user.email
 	claims['email_verified'] = user.email_verified
