@@ -7,7 +7,7 @@ class CustomUserAdmin(UserAdmin):
 	list_display = ('name', 'username', 'is_staff', )
 	list_filter = ('is_staff', )
 	search_fields = ('first_name', 'last_name', 'username', )
-	readonly_fields = ('date_joined', 'last_login', )
+	readonly_fields = ('date_joined', 'last_login', 'updated_at', )
 	fieldsets = (
 		(None, {
 			'fields': ('username', 'password')
