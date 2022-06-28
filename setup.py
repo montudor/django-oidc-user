@@ -13,7 +13,7 @@ with open(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'README.md'),
 setup(
     name='django-oidc-user',
     packages=find_packages(),
-    version='0.3.4',
+    version='0.3.5',
     description='Creates an OpenID Connect compliant User model.',
     long_description=long_description,
     long_description_content_type='text/markdown',
